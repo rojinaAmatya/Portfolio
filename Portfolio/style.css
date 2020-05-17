@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    margin:0;  
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    position : absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #dbcea9; /*might need to change */
+    padding: 0px 15px;
+    z-index: 10;
+
+}
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+header .title-name a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color:#ffffff;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+
+/*
+header .title-name a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width:100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+*/
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+
+}
+
+header .navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    position: relative;
+
+}
+
+header .navbar ul li a.active::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width:100%;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+}
+
+.home{
+   min-height: 100vh;
+   background-image: url("images/keyboard.jpg");
+   background-size: cover ;
+   background-position: center;
+}
+
+.home .full-screen{
+    min-height: 100vh;
+
+}
+
+.home .home-content{
+    background-color:blue;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+
+}
+
+.home .home-content .block{
+    background-color: red;
+    flex: 0 0 75%;
+    max-width: 75%;
+
+}
+
