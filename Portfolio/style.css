@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body{
     margin:0;  
@@ -204,7 +205,7 @@ header .navbar ul li a.active::before{
     left:0;
     position: absolute;
     height: 2px;
-    right:30%;
+    right:0%;
     background-color: #9781f0;
     bottom: 0px;
 }
@@ -246,9 +247,59 @@ header .navbar ul li a.active::before{
 }
 
 .about-me .about-content .text-about-me h4{
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 600;
     margin: 0 0 5px;
+    color: #000000;
+}
+.about-me .about-content .text-about-me h4 span{
+    color: #9781f0;
+}
+
+.about-me .about-content .text-about-me p1{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 15px;
+    color: #878787;
+    line-height:25px;
+    
+    
+}
+.about-me .about-content .text-about-me p1 span{
+    color: #9781f0;
+}
+
+.about-me .about-content .text-about-me .social-links {
+    padding-top:25px;
+}
+.about-me .about-content .text-about-me .social-links a{
+    height: 28px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 3px;
+    display:inline-block;
+    border: 1px solid #000000;
+    line-height: 28px;
+    text-align: center;
+    margin:0 5px;
+    -webkit-transition: all .5s ease ;
+    transition: all .5s ease ;
 
 }
 
+.about-me .about-content .text-about-me .social-links a:hover{
+    background-color: transparent;
+}
+
+.about-me .about-content .text-about-me .social-links a .fa{
+    color: #ffffff;
+    font-size: 20px;
+    -webkit-transition: all .5s ease ;
+    transition: all .5s ease ;
+
+}
+
+.about-me .about-content .text-about-me .social-links a:hover .fa{
+    color: #000000;
+    
+}
