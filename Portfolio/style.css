@@ -301,5 +301,230 @@ header .navbar ul li a.active::before{
 
 .about-me .about-content .text-about-me .social-links a:hover .fa{
     color: #000000;
-    
 }
+
+.skills{
+    padding: 100px 15px;
+    background-color:#242424;
+}
+
+.skills .skills-content{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right:30px;
+   
+}
+
+.skills .img{
+   flex: 0 0 50%;
+   max-width: 50%;
+}
+
+.skills .img img{
+    width: 400px;
+    height:400px;
+    display: block;
+}
+
+
+.skills-content h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#ffffff;
+    margin: 0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.skills-content  h1:before{
+    content: " ";
+    left:0;
+    position: absolute;
+    height: 2px;
+    right:0%;
+    background-color: #9781f0;
+    bottom: 0px;
+}
+
+
+.skills .skills-content .section-title p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+    margin: 15px 0 0px;
+}
+
+
+.align-items-center{
+    align-items: center;
+}
+
+
+.skills .skills-content .skill-box{
+    width:500px;
+    margin: 10px;
+    padding: 20px;
+
+}
+ul{
+   padding-left:0;
+   margin-top:0;
+  
+}
+
+
+li.html{
+    color:white;
+    position: relative;
+    list-style: none;
+    margin-top:-10px ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+li.css {
+    color:white;
+    position: relative;
+    list-style: none;
+    margin:40px 0 ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+li.js {
+    color:white;
+    position: relative;
+    list-style: none;
+    margin:40px 0 ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+li.react {
+    color:white;
+    position: relative;
+    list-style: none;
+    margin:40px 0 ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+li.nodejs {
+    color:white;
+    position: relative;
+    list-style: none;
+    margin:40px 0 ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+li.angular{
+    color:white;
+    position: relative;
+    list-style: none;
+    margin:40px 0 ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left:0;
+    width:100%;
+    height: 15px;
+    background-color: #f0f0f5;
+    border-radius: 1000px;
+}
+
+li:after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left:0;
+    width:0;
+    height: 15px;
+    background-color: rgba(62, 45, 129,.5);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+}
+
+li.html:after{
+    animation-name: html;
+
+}
+
+@keyframes html{
+    to {
+        width:90%
+    }
+}
+
+li.css:after{
+    animation-name:css;
+
+}
+
+@keyframes css{
+    to {
+        width:97%
+    }
+}
+
+
+li.js:after{
+    animation-name:js;
+
+}
+
+@keyframes js{
+    to {
+        width:88%
+    }
+}
+
+li.react:after{
+    animation-name:react;
+
+}
+
+@keyframes react{
+    to {
+        width:75%
+    }
+}
+
+li.nodejs:after{
+    animation-name:nodejs;
+
+}
+
+@keyframes nodejs{
+    to {
+        width:65%
+    }
+}
+
+
+li.angular:after{
+    animation-name:angular;
+
+}
+
+@keyframes angular{
+    to {
+        width:65%
+    }
+}
+
+
+
+
+
