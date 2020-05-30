@@ -295,14 +295,13 @@ header .navbar ul li a.active::before {
 }
 
 .about-me .about-content .text-about-me .social-links li.instagram {
-  background: linear-gradient(
-    45deg,
-    #4c68d7,
-    #8a3ab9,
-    #bc2a8d,
-    #fbad50,
-    #cd486b,
-    #4c68d7
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
   );
   box-shadow: 0 0 16px #e1306c;
 }
