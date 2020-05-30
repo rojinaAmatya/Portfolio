@@ -244,8 +244,72 @@ header .navbar ul li a.active::before {
 }
 
 .about-me .about-content .text-about-me .social-links {
-  padding-top: 25px;
+  padding: 30px;
+  text-align: center;
 }
+.about-me .about-content .text-about-me .social-links li {
+  background-color: yellow;
+  padding: 0;
+  margin: 7px;
+  list-style: none;
+  display: inline-block;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.about-me .about-content .text-about-me .social-links li a {
+  display: block;
+  padding: 0.5em;
+  min-width: 2.28571429em;
+  max-width: 2.28571429em;
+  height: 2.28571429em;
+  white-space: nowrap;
+  line-height: 1.5em;
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #ffffff;
+  text-align: center;
+}
+.about-me .about-content .text-about-me .social-links li i {
+  margin-right: 0.5em;
+}
+
+.about-me .about-content .text-about-me .social-links li:hover a {
+  max-width: 200px;
+  padding-right: 1em;
+}
+
+.about-me .about-content .text-about-me .social-links li.linkedin {
+  background-color: #0077b7;
+  box-shadow: 0 0 16px #0077b7;
+}
+
+.about-me .about-content .text-about-me .social-links li.github {
+  background-color: #000;
+  box-shadow: 0 0 16px #000;
+}
+
+.about-me .about-content .text-about-me .social-links li.pinterest {
+  background-color: #e60023;
+  box-shadow: 0 0 16px #e60023;
+}
+
+.about-me .about-content .text-about-me .social-links li.instagram {
+  background-color: linear-gradient(
+    #515bd4,
+    #8134af,
+    #dd2a7b,
+    #feda77,
+    #f58529
+  );
+  box-shadow: 0 0 16px;
+}
+
+.about-me .about-content .text-about-me .social-links li.twitter {
+  background-color: #08a0e9;
+  box-shadow: 0 0 16px #08a0e9;
+}
+/*
 .about-me .about-content .text-about-me .social-links a {
   height: 28px;
   width: 30px;
@@ -274,7 +338,7 @@ header .navbar ul li a.active::before {
 .about-me .about-content .text-about-me .social-links a:hover .fa {
   color: #000000;
 }
-
+*/
 .skills {
   padding: 100px 15px;
   background-color: #242424;
