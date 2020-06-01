@@ -310,36 +310,7 @@ header .navbar ul li a.active::before {
   background-color: #08a0e9;
   box-shadow: 0 0 16px #08a0e9;
 }
-/*
-.about-me .about-content .text-about-me .social-links a {
-  height: 28px;
-  width: 30px;
-  background-color: #000000;
-  border-radius: 3px;
-  display: inline-block;
-  border: 1px solid #000000;
-  line-height: 28px;
-  text-align: center;
-  margin: 0 5px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
 
-.about-me .about-content .text-about-me .social-links a:hover {
-  background-color: transparent;
-}
-
-.about-me .about-content .text-about-me .social-links a .fa {
-  color: #ffffff;
-  font-size: 20px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.about-me .about-content .text-about-me .social-links a:hover .fa {
-  color: #000000;
-}
-*/
 .skills {
   padding: 100px 15px;
   background-color: #242424;
