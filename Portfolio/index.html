@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+  <link rel="stylesheet" type ="text/css" href="style.css">
+    <link rel="stylesheet" type ="text/css" href="style-switch.css">
+
+    <!-- Style switcher for demo-->
+    <link rel="stylesheet" type ="text/css" class ="alternate-style" title="color-1" href="color1.css" disabled>
+    <link rel="stylesheet" type ="text/css" class ="alternate-style" title="color-2" href="color2.css" disabled>
+    <link rel="stylesheet" type ="text/css" class ="alternate-style" title="color-3" href="color3.css" disabled>
+    <link rel="stylesheet" type ="text/css" class ="alternate-style" title="color-4" href="color4.css" disabled>
+    <link rel="stylesheet" type ="text/css" class ="alternate-style" title="color-5" href="color5.css" disabled>
+
+
     <title>Rojina Portfolio</title>
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
 </head>
@@ -21,13 +35,14 @@
                     </div>
                 </div>
                 <div class="navbar">
-                    <ul>
-                        <li><a href="" class ="active"> 01. Home</a></li>
-                        <li><a href="#about"> 02. About Me</a></li>
-                        <li><a href="#skills">03. Skills</a></li>
-                        <li><a href="#projects">04. Projects</a></li>
-                        <li><a href="#contact">05. Contact</a></li>
-                    </ul>
+                    <ol>
+                        <li><a href="" class ="active"><span>01.</span>Home</a></li>
+                        <li><a href="#about"> <span>02. </span> About Me</a></li>
+                        <li><a href="#skills"> <span>03. </span> Skills</a></li>
+                        <li><a href="#projects"><span>04. </span>Projects</a></li>
+                        <li><a href="#contact"><span>05. </span>Contact</a></li>
+                    </ol>
+                
                 </div>
             </div>
     </header>
@@ -73,7 +88,25 @@
 
     </section>
 
+<!--Styling switch-->
+<div class ="style-switcher outer-shadow">
+    <div class ="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+        <i class ="fas fa-cog fa-spin"></i>
+    </div>
+    <div class ="day-night s-icon outer-shadow hover-in-shadow">
+        <i class ="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <Div class ="color">
+        <span class = "color-1" onclick ="setActiveStyle('color-1')"></span>
+        <span class = "color-2" onclick ="setActiveStyle('color-2')"></span>
+        <span class = "color-3" onclick ="setActiveStyle('color-3')"></span>
+        <span class = "color-4" onclick ="setActiveStyle('color-4')"></span>
+        <span class = "color-5" onclick ="setActiveStyle('color-5')"></span>
+    </Div>
+</div>
 
+<!--End styling switch-->
 <!--End Home-->
 
  <!--Start About-->
@@ -257,7 +290,7 @@
 </section>
 <!--End Contact-->
 
-
+<script src="style-switcher.js"></script>
 
 
 </body>
