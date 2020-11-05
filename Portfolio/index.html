@@ -16,15 +16,17 @@
         <div class="container navbar">
             <div class="row">
                 <div class="title-name">
-                    <a href=" " class="logo"> RA</a>
+                    <div class ="logo">
+                        <img src ="images/RA-image.jpg" alt="logo"/>
+                    </div>
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="" class ="active"> Home</a></li>
-                        <li><a href="#about"> About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="" class ="active"> 01. Home</a></li>
+                        <li><a href="#about"> 02. About Me</a></li>
+                        <li><a href="#skills">03. Skills</a></li>
+                        <li><a href="#projects">04. Projects</a></li>
+                        <li><a href="#contact">05. Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,12 +34,33 @@
 
     <!--Home-->
     <section class="home">
+        <!--effect wrap section-->
+        <div class="effect-wrap">
+            <div class ="effect effect-1">
+            </div>
+            <div class = "effect effect-2">
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                <div></div>
+            </div>
+            <div class = "effect effect-3">
+            </div>
+            <div class = "effect effect-4">
+            </div>
+            <div class = "effect effect-5">
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- effect wrap end section-->
         <div class="container">
             <div class ="row full-screen">
                 <div class ="home-content">
                     <div class = block>
-                        <h6>Hello, My name is</h6>
-                        <h1>Rojina Amatya</h1>
+                        <h6>Hello, My  name  is</h6>
+                        <h1>Rojina Amatya.</h1>
+                        <h4> I build things for the web.</h4>
                         <h3>Front-End Web Developer</h3>
                         <div class ="resume-btn">
                             <a href =" ">Download Resume</a>
@@ -58,7 +81,7 @@
      <div class="container">
          <div class ="row">
              <div class ="section-title">
-                 <h1>About Me</h1>
+                 <h1>01. About Me</h1>
                  <p class ="small text-uppercase">Information About Me </p>
 
              </div>
@@ -67,18 +90,19 @@
              <div class ="about-content">
                 <div class = "row">
                  <div class ="img-wrap">
-                     <img src ="images/profile-picture.jpg" alt= "about-me" />
+                    <div class = "inner-shadow">
+                        <img src ="images/profile-picture.jpg" class = "outer-shadow" alt= "about-me" />
+                    </div>
                  </div>
                  <div class ="text-about-me">
                      <h4>Hello All! Welcome to my portfolio. This is <span>Rojina Amatya</span>.</h4>
                      <p1> I live in Fargo, North Dakota. I graduated from Minnesota State University Moorhead with major 
                          in <span>Computer Information Systems</span>. My profession interest is <span>Front-end Web design
-                            and development.</span> I enjoy taking complex problems and turning them into simple. Lorem ipsum dolor
-                             sit amet, eu mel ferri noster virtute, at porro legendos duo, cum ea impetus quaestio. In integre 
-                             accusam prodesset qui, at meis appetere has. Vis ex constituam intellegebat. Mentitum erroribus scriptorem pro ei.
-                              Ad mollis eripuit corrumpit vim, ne ubique molestie sit.Eum quod dolorem an. Erat noster ut his. Ea numquam forensibus
-                            expetendis has, nam ea quot probo vocibus. Omnium inermis eu pro.
+                            and development.</span> I enjoy creating things that live on the internet whiether that are websites
+                            or applications. My goal is to build product that are pixel-perfect.
                      </p1>
+
+                     
 
                      <ul class = "social-links">
                          <li class = "linkedin"><a href= "https://www.linkedin.com/in/rojina-amatya-509981149/"><i class= "fa fa-fw fa-linkedin"></i>LinkedIn</a></li>
@@ -129,7 +153,43 @@
         </div>
     </div>
 </section>
+<!--End Skills-->
 
+<!--Start timeline-->
+<section class ="experience">
+    <div class = "container">
+        <div class ="row">
+            <div class = "section-title">
+                <h1>03. Work Experience</h1>
+            </div>
+        </div>
+        <div class = "timeline">
+            <ul>
+                <li class="date" data-date ="Nov 2019 - Present">
+                    <h1>Razor Consulting Solutions</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </p>
+                </li>
+                <li class="date" data-date ="Mar 2019 - Aug 2019">
+                    <h1>Appareo Systems</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </li>
+                <li class="date" data-date ="2017 - 2018">
+                    <h1>Minnesota State University Moorhead</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End timeline-->
+
+
+<!--Start Contact-->
 <section class ="Contact" >
     <div class ="container">
         <div class ="row">
@@ -195,11 +255,11 @@
         </div>
     </div>
 </section>
-<!--End Skills-->
-
-<!--Start Contact-->
-
 <!--End Contact-->
+
+
+
+
 </body>
 
 </html>
