@@ -1,10 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+/*defining the custom theme css variables*/
+:root {
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px -3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px -3px #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+  --background-color: #0a192f;
+  --font-color1: #64ffda;
+  --font-color2: #ccd6f6;
+  --font-color3: #8892b0;
+  --font-color4: #cb8d97;
+  --font-color5: #a8b2d1;
+  --tint: rgba(100, 255, 218, 0.1);
+  --skin-color: #ccd6f6;
+  --heading-dash: #64ffda;
+}
 
 body {
   margin: 0;
   font-family: "Calibre", "San Francisco", "SF Pro Text", sans-serif;
-  background-color: #0a192f;
+  background-color: var(--background-color);
+  counter-reset: my-awesome-counter 0;
 }
 
 * {
@@ -12,6 +32,10 @@ body {
   margin: 0;
 }
 
+*:not(i) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
 .container {
   max-width: 1140px;
   margin: auto;
@@ -37,47 +61,48 @@ header .title-name a {
   text-decoration: none;
   font-size: 22px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--font-color1);
   text-transform: uppercase;
   position: relative;
 }
 
-header .navbar ul {
-  list-style: none;
+header .navbar ol {
   padding: 0;
   margin: 0;
+  color: white;
 }
-header .navbar ul li {
+
+header .navbar ol li {
   display: inline-block;
   margin-left: 35px;
 }
 
-header .navbar ul li a {
+header .navbar ol li a {
   font-size: 15px;
   text-decoration: none;
   line-height: 72px;
-  color: #ffffff;
+  color: var(--font-color1);
   display: block;
   font-weight: 600;
   position: relative;
 }
 
-header .navbar ul li a::before {
+header .navbar ol li a::before {
   content: "";
   height: 3px;
-  background-color: #ffffff;
+  background-color: white;
   width: 0%;
   position: absolute;
   right: 0px;
   bottom: -1px;
 }
 
-header .navbar ul li a:hover::before {
+header .navbar ol li a:hover::before {
   width: 100%;
   left: 0;
 }
 
-header .navbar ul li a.active::before {
+header .navbar ol li a.active::before {
   width: 100%;
   left: 0;
 }
@@ -107,7 +132,7 @@ header .navbar ul li a.active::before {
 .effect-1 {
   width: 70px;
   height: 70px;
-  border: 8px solid #64ffda;
+  border: 8px solid var(--font-color1);
   right: 20%;
   bottom: 20%;
   animation: spin 10s linear infinite;
@@ -123,14 +148,14 @@ header .navbar ul li a.active::before {
 .effect-2 div {
   height: 3px;
   width: 3px;
-  background-color: #ccd6f6;
+  background-color: var(--font-color2);
   margin: 0 3px 10px;
 }
 
 .effect-3 {
   height: 360px; /*180px*/
   width: 360px;
-  border: 25px solid #8892b0;
+  border: 25px solid var(--skin-color);
   border-radius: 50%;
   left: 50%;
   top: -120px;
@@ -139,7 +164,7 @@ header .navbar ul li a.active::before {
 
 .effect-4 {
   border-top: 30px solid transparent;
-  border-left: 30px solid #64ffda;
+  border-left: 30px solid var(--font-color1);
   left: 30%;
   top: 20%;
   animation: spin 15s linear infinite;
@@ -148,7 +173,7 @@ header .navbar ul li a.active::before {
 .effect-4:before {
   content: "";
   border-top: 30px solid transparent;
-  border-left: 30px solid #64ffda;
+  border-left: 30px solid var(--font-color1);
   position: absolute;
   opacity: 0.5;
   left: -35px;
@@ -157,7 +182,7 @@ header .navbar ul li a.active::before {
 
 .effect-5 div {
   width: 4px;
-  background-color: #cb8d97;
+  background-color: var(--font-color4);
 }
 
 .effect-5 {
@@ -216,26 +241,27 @@ header .navbar ul li a.active::before {
   flex: 0 0 75%;
   max-width: 75%;
   padding-left: 35px;
-  border-left: 5px solid#64ffda;
+  border-left: 5px solid var(--font-color1);
   margin-top: 0;
 }
 
 .home .home-content .block h6 {
-  color: #64ffda;
+  letter-spacing: 5px;
+  color: var(--font-color1);
   font-size: 18px;
   font-weight: 500;
   margin: 0;
   padding: 0;
 }
 .home .home-content .block h1 {
-  color: #ccd6f6;
+  color: var(--font-color2);
   font-size: 75px;
   font-weight: 600;
   margin: 0;
   padding: 0;
 }
 .home .home-content .block h3 {
-  color: #cb8d97;
+  color: var(--font-color4);
   font-size: 25px;
   font-weight: 500;
   margin: 0;
@@ -243,7 +269,7 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block h4 {
-  color: #8892b0;
+  color: var(--font-color3);
   font-size: 75px;
   font-weight: 600;
   margin: 0;
@@ -256,8 +282,8 @@ header .navbar ul li a.active::before {
 
 .home .home-content .block .resume-btn a {
   border-radius: 4px;
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  color: var(--font-color1);
+  border: 1px solid var(--font-color1);
   padding: 12px 25px;
   text-decoration: none;
   display: inline-block;
@@ -269,15 +295,15 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block .resume-btn a:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--tint);
+  color: var(--font-color1);
 }
 
 /*About Me */
 .about-me {
   flex: 0 0 100%;
   padding: 100px 15px;
-  background-color: #0a192f;
+  background-color: var(--font-background-color);
 }
 
 .about-me .section-title {
@@ -291,7 +317,7 @@ header .navbar ul li a.active::before {
   font-size: 35px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #64ffda;
+  color: var(--font-color1);
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 5px;
@@ -303,7 +329,7 @@ header .navbar ul li a.active::before {
   position: absolute;
   height: 2px;
   right: 0%;
-  background-color: #9781f0;
+  background-color: var(--heading-dash);
   bottom: 0px;
 }
 
@@ -313,7 +339,7 @@ header .navbar ul li a.active::before {
 .about-me .section-title p.small {
   display: block;
   font-size: 20px;
-  color: #ccd6f6;
+  color: var(--font-color2);
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -346,21 +372,22 @@ header .navbar ul li a.active::before {
   font-size: 25px;
   font-weight: 600;
   margin: 0 0 5px;
-  color: #a8b2d1;
+  color: var(--font-color1);
 }
 .about-me .about-content .text-about-me h4 span {
-  color: #64ffda;
+  color: var(--font-color5);
+  font-weight: 600;
 }
 
 .about-me .about-content .text-about-me p1 {
   font-size: 18px;
   font-weight: 400;
   margin: 0 0 15px;
-  color: #ccd6f6;
+  color: var(--font-color2);
   line-height: 25px;
 }
 .about-me .about-content .text-about-me p1 span {
-  color: #64ffda;
+  color: var(--font-color5);
 }
 
 .about-me .about-content .text-about-me .social-links {
@@ -637,7 +664,7 @@ li.angular:after {
 
 .experience {
   padding: 100px 15px;
-  background-color: #0a192f;
+  background-color: var(--background-color);
   margin: 0;
 }
 
@@ -652,7 +679,7 @@ li.angular:after {
   font-size: 35px;
   text-transform: uppercase;
   font-weight: 700;
-  color: white;
+  color: var(--font-color1);
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 5px;
@@ -664,7 +691,7 @@ li.angular:after {
   position: absolute;
   height: 2px;
   right: 0%;
-  background-color: #52eff2;
+  background-color: var(--font-color1);
   bottom: 0px;
 }
 
@@ -678,7 +705,7 @@ li.angular:after {
   margin-bottom: 35px;
 }
 .timeline ul {
-  border-left: 4px solid #52eff2;
+  border-left: 4px solid var(--font-color1);
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0.05);
   position: relative;
@@ -699,14 +726,15 @@ li.angular:after {
   font-weight: 300;
   margin-bottom: 1rem;
   opacity: 0.5;
+  color: var(--font-color1);
 }
 
 .timeline .date {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--font-color3);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
-  color: white;
+  color: var(--font-color2);
 }
 
 .timeline .date:last-of-type {
@@ -733,7 +761,7 @@ li.angular:after {
 
 .timeline .date::after {
   content: "";
-  box-shadow: 0 0 0 4px #fd57bf;
+  box-shadow: 0 0 0 4px #cb8d97;
   border-radius: 100%;
   left: -5rem;
   height: 1.5rem;
