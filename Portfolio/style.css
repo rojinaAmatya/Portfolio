@@ -20,6 +20,7 @@
   --heading-dash: #64ffda;
   --font-color6: #64ffda;
   --textbox-color: #0a192f;
+  --scroll-color: #0a192f93;
 }
 
 body {
@@ -43,6 +44,9 @@ body {
   margin: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -51,9 +55,24 @@ header {
   position: absolute;
   left: 0px;
   right: 0px;
-  /*border-bottom: 1px solid #dbcea9; might need to change */
+  /* border-bottom: 1px solid #dbcea9; */
   padding: 0px 15px;
   z-index: 10;
+}
+
+header.fixed {
+  background-color: var(--scroll-color);
+  position: fixed;
+  animation: fixHeader 1s ease;
+}
+
+@keyframes fixHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 header .row {
   justify-content: space-between;
@@ -70,6 +89,9 @@ header .title-name a {
   padding: 8px;
 }
 
+header.fixed .title-name a {
+  color: var(--font-color1);
+}
 header .navbar ol {
   padding: 0;
   margin: 0;
@@ -94,7 +116,7 @@ header .navbar ol li a {
 header .navbar ol li a::before {
   content: "";
   height: 3px;
-  background-color: white;
+  background-color: var(--font-color1);
   width: 0%;
   position: absolute;
   right: 0px;
@@ -465,7 +487,6 @@ header .navbar ol li a.active::before {
   flex: 0 0 100%;
   padding: 100px 15px;
   background-color: var(--font-background-color);
-  padding-top: 10px;
 }
 
 .about-me .section-title {
