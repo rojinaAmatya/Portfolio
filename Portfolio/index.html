@@ -12,6 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <link rel="stylesheet" type ="text/css" href="style.css">
     <link rel="stylesheet" type ="text/css" href="style-switch.css">
+    <link rel="stylesheet" type ="text/css" href="responsive.css">
 
     <!-- Style switcher for demo-->
     <link rel="stylesheet" type ="text/css" class ="alternate-style" title="color-1" href="color1.css" disabled>
@@ -37,9 +38,9 @@
                 </div>
                 <div class="navbar">
                     <ol>
-                        <li><a href="" class ="active"><span>01.</span>Home</a></li>
+                        <li><a href="#home" class ="active"><span>01.</span>Home</a></li>
                         <li><a href="#about"> <span>02. </span> About Me</a></li>
-                        <li><a href="#skills"> <span>03. </span> Skills</a></li>
+                        <li><a href="#experience"> <span>03. </span> Experience</a></li>
                         <li><a href="#projects"><span>04. </span>Projects</a></li>
                         <li><a href="#contact"><span>05. </span>Contact</a></li>
                     </ol>
@@ -49,7 +50,7 @@
     </header>
 
     <!--Home-->
-    <section class="home">
+    <section class="home" id = "home">
         <!--effect wrap section-->
         <div class="effect-wrap">
             <div class ="effect effect-1">
@@ -124,7 +125,7 @@
 <!--End Home-->
 
  <!--Start About-->
- <section class = "about-me">
+ <section class = "about-me" id= "about">
      <div class="container">
          <div class ="row">
              <div class ="section-title">
@@ -215,7 +216,7 @@
 <!--End Skills--> -->
 
 <!--Start timeline-->
-<section class ="experience">
+<section class ="experience" id ="experience">
     <div class = "container">
         <div class ="row">
             <div class = "section-title">
@@ -249,7 +250,7 @@
 
 
 <!--Start Contact-->
-<section class ="Contact" >
+<section class ="Contact" id= "contact">
     <div class ="container">
         <div class ="row">
             <div class = "section-title text-center">
@@ -316,8 +317,10 @@
 </section>
 <!--End Contact-->
 
+<script src="script.js"></script>
 <script src="style-switcher.js"></script>
 <script src="wrap.js"></script>
+
 
 </body>
 
