@@ -21,6 +21,7 @@
   --font-color6: #64ffda;
   --textbox-color: #0a192f;
   --scroll-color: #0a192f93;
+  --navbar-back-color: #172a45;
 }
 
 body {
@@ -64,6 +65,7 @@ header.fixed {
   background-color: var(--scroll-color);
   position: fixed;
   animation: fixHeader 1s ease;
+  z-index: 11;
 }
 
 @keyframes fixHeader {
@@ -78,6 +80,7 @@ header .row {
   justify-content: space-between;
   align-items: center;
 }
+
 header .title-name a {
   text-decoration: none;
   font-size: 22px;
@@ -92,18 +95,18 @@ header .title-name a {
 header.fixed .title-name a {
   color: var(--font-color1);
 }
-header .navbar ol {
+header .navbar ul {
   padding: 0;
   margin: 0;
   color: white;
 }
 
-header .navbar ol li {
+header .navbar ul li {
   display: inline-block;
   margin-left: 35px;
 }
 
-header .navbar ol li a {
+header .navbar ul li a {
   font-size: 15px;
   text-decoration: none;
   line-height: 72px;
@@ -113,7 +116,7 @@ header .navbar ol li a {
   position: relative;
 }
 
-header .navbar ol li a::before {
+header .navbar ul li a::before {
   content: "";
   height: 3px;
   background-color: var(--font-color1);
@@ -123,12 +126,12 @@ header .navbar ol li a::before {
   bottom: -1px;
 }
 
-header .navbar ol li a:hover::before {
+header .navbar ul li a:hover::before {
   width: 100%;
   left: 0;
 }
 
-header .navbar ol li a.active::before {
+header .navbar ul li a.active::before {
   width: 100%;
   left: 0;
 }
