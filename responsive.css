@@ -66,4 +66,22 @@
   header .navbar ul li a {
     line-height: 42px;
   }
+
+  .about-me .about-content .text-about-me {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 30px 30px;
+    display: block;
+    box-shadow: inherit;
+  }
+
+  .about-me .about-content .img-wrap {
+    margin: 50px auto 0px;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .about-me .about-content .text-about-me h4 {
+    padding-top: 30px;
+  }
 }
