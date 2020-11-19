@@ -1,0 +1,69 @@
+.ham-burger .fa {
+  font-size: 20px;
+  height: 27px;
+  width: 35px;
+  background: var(--background-color);
+  color: var(--font-color6);
+  border-radius: 3px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  border: 1px solid #0a192fb7;
+}
+
+@media (max-width: 991px) {
+  .home .home-content .block .myName {
+    font-size: 50px;
+  }
+
+  .home .home-content .block h6 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .home-content .block .myName {
+    font-size: 35px;
+  }
+
+  .home .home-content .block h4 {
+    font-size: 50px;
+  }
+  .home .home-content .block h3 {
+    font-size: 15px;
+  }
+  header {
+    padding: 15px;
+    position: fixed;
+    background-color: #0a192f93; /*change or delete*/
+    border: none;
+  }
+  .navbar {
+    position: absolute;
+    background-color: var(--navbar-back-color);
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    padding: 15px;
+    display: none;
+  }
+
+  .navbar.show {
+    display: block;
+  }
+
+  .ham-burger .fa {
+    display: inline-block;
+  }
+
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  header .navbar ul li a {
+    line-height: 42px;
+  }
+}
