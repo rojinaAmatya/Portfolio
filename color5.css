@@ -1,10 +1,22 @@
-:root {
+/* :root {
   --skin-color: #f9bb8d;
   --background-color: #c7dac7;
   --font-color1: #df3737;
   --font-color2: #df3737;
   --font-color3: #143f7d;
   --font-color4: #8e4a17;
+  --tint: rgba(87, 162, 233, 0.1);
+  --font-color6: #e86a18;
+}
+ */
+
+:root {
+  --skin-color: #a42331;
+  --background-color: #172838;
+  --font-color1: #0097a0;
+  --font-color2: #d69d2c;
+  --font-color3: #0097a0;
+  --font-color4: #ffffff;
   --tint: rgba(87, 162, 233, 0.1);
   --font-color6: #e86a18;
 }
