@@ -12,7 +12,7 @@
   border: 1px solid #0a192fb7;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .home .home-content .block .myName {
     font-size: 50px;
   }
@@ -22,13 +22,29 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .effect-3 {
+    height: 200px; /*180px*/
+    width: 200px;
+    border: 20px solid var(--skin-color);
+    border-radius: 50%;
+    left: 50%;
+    top: -120px;
+    animation: leftBounce 3s ease-in-out infinite;
+  }
+
+  .effect-2 {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .home .home-content .block .myName {
     font-size: 35px;
   }
 
   .home .home-content .block h4 {
-    font-size: 50px;
+    font-size: 15px;
   }
   .home .home-content .block h3 {
     font-size: 15px;
@@ -83,5 +99,17 @@
 
   .about-me .about-content .text-about-me h4 {
     padding-top: 30px;
+  }
+  .effect-1,
+  .effect-2,
+  .effect-3,
+  .effect-4,
+  .effect-5,
+  .effect-6,
+  .effect-7,
+  .effect-8,
+  .effect-9,
+  .effect-10 {
+    display: none;
   }
 }
