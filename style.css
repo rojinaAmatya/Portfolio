@@ -9,13 +9,14 @@
   --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px -3px #f8f8f8;
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
-  --background-color: #0a192f;
+  --background-color: /*#0a192f*/ #0a1920;
   --font-color1: #64ffda;
   --font-color2: #ccd6f6;
   --font-color3: #8892b0;
   --font-color4: #cb8d97;
   --font-color5: #a8b2d1;
   --font-color7: #ccd6f6;
+  --shape-color: #ff63b1;
   --tint: rgba(100, 255, 218, 0.1);
   --skin-color: #ccd6f6;
   --heading-dash: #64ffda;
@@ -23,6 +24,11 @@
   --textbox-color: #0a192f;
   --scroll-color: #0a192f93;
   --navbar-back-color: #172a45;
+  --border-size: 15px;
+  --width: 25px;
+  --height: 25px;
+
+  /*#FF63B1*/
 }
 
 body {
@@ -30,6 +36,12 @@ body {
   font-family: "Calibre", "San Francisco", "SF Pro Text", sans-serif;
   background-color: var(--background-color);
   counter-reset: my-awesome-counter 0;
+}
+
+section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1080px;
 }
 
 * {
@@ -42,7 +54,7 @@ body {
   font-weight: 400;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1080px;
   margin: auto;
 }
 
@@ -159,12 +171,63 @@ header .navbar ul li a.active::before {
   z-index: -1;
 }
 
+.zigzag {
+  position: absolute;
+  z-index: -1;
+  top: 85%;
+  left: -5%;
+  height: 230px;
+  width: 230px;
+  /* transform: rotate(45deg); */
+}
+.zigzag2:after {
+  display: inline-block;
+  position: relative;
+  content: "";
+  left: 50%;
+  top: 30%;
+  margin-left: 4px;
+  width: var(--width);
+  height: var(--height);
+  transform: rotate(45deg);
+  border-top: var(--border-size) solid var(--shape-color);
+  border-left: var(--border-size) solid var(--shape-color);
+}
+
+.zigzag3:after {
+  display: inline-block;
+  position: relative;
+  content: "";
+  left: 66%;
+  bottom: 46px;
+  margin-left: 4px;
+  width: var(--width);
+  height: var(--height);
+  transform: rotate(45deg);
+  border-top: var(--border-size) solid var(--shape-color);
+  border-left: var(--border-size) solid var(--shape-color);
+}
+
+.zigzag4:after {
+  display: inline-block;
+  position: relative;
+  content: "";
+  left: 82%;
+  bottom: 90px;
+  margin-left: 4px;
+  width: var(--width);
+  height: var(--height);
+  transform: rotate(45deg);
+  border-top: var(--border-size) solid var(--shape-color);
+  border-left: var(--border-size) solid var(--shape-color);
+}
+
 .effect-1 {
   width: 70px;
   height: 70px;
-  border: 8px solid var(--font-color1);
-  right: 20%;
-  bottom: 20%;
+  border: 5px solid var(--font-color1);
+  right: 35%;
+  bottom: 15%;
   animation: spin 10s linear infinite;
 }
 .effect-2 {
@@ -216,21 +279,77 @@ header .navbar ul li a.active::before {
 }
 
 .effect-5 {
-  height: 50px;
-  width: 50px;
-  right: 10%;
-  top: 30%;
+  height: 55px;
+  width: 55px;
+  right: 14.5%;
+  top: 30.5%;
   display: flex;
   justify-content: space-between;
   border-radius: 50%;
   overflow: hidden;
   animation: spin 10s linear infinite;
+  position: relative;
+}
+.effect-8 div {
+  width: 4px;
+  background-color: var(--font-color4);
+}
+.effect-8 {
+  height: 55px;
+  width: 55px;
+  right: 30%;
+  top: 49%;
+  display: flex;
+  border: 1px solid var(--shape-color);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.effect-10 {
+  border-top: 5px dotted var(--font-color1);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 25%;
+  width: 14.5%;
+  right: 12.5%;
+  top: 40%;
+  transform: rotate(-37deg);
+}
+
+.effect-9 {
+  position: relative;
+  right: 15%; /*14%*/
+  top: 60%; /*70.5%;*/
+  width: 32px;
+  height: 32px;
+  display: flex;
+}
+
+.effect-9:before,
+.effect-9:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 70px;
+  width: 7px;
+  background-color: var(--font-color2);
+  border-radius: 50%;
+}
+.effect-9:before {
+  transform: rotate(45deg);
+}
+.effect-9:after {
+  transform: rotate(-45deg);
 }
 
 .effect-6 {
   width: 200px;
   height: 100px;
-  padding-top: 100px;
+  padding-top: 300px;
   margin: 0 auto;
 }
 
@@ -362,6 +481,27 @@ header .navbar ul li a.active::before {
   }
 }
 
+.effect-7 {
+  border-left: 150px solid var(--font-color1);
+  border-top: 80px solid transparent;
+  border-bottom: 60px solid transparent;
+  left: 0;
+  top: 10%;
+}
+
+.effect-7:before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-left: 5px solid var(--shape-color);
+  border-top: 5px solid var(--shape-color);
+  border-bottom: 3px solid transparent;
+  transform: rotate(135deg) skew(15deg, 15deg);
+  left: -230px;
+  top: -60px;
+}
+
 /*----------------------------------------*/
 @keyframes spin {
   0% {
@@ -457,8 +597,8 @@ header .navbar ul li a.active::before {
 
 .home .home-content .block h4 {
   color: var(--font-color3);
-  font-size: 75px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -537,16 +677,32 @@ header .navbar ul li a.active::before {
 .about-me .about-content .img-wrap {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  position: relative;
+  display: block;
 }
 
 .about-me .about-content .img-wrap img {
   width: 100%;
   display: block;
+  border-radius: 0.5rem;
 }
+
+.about-me .about-content .img-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 2rem;
+  left: 2rem;
+  border: 0.25rem solid var(--font-color1);
+  border-radius: 0.5rem;
+}
+
 .about-me .about-content .text-about-me {
   flex: 0 0 66.66%;
   max-width: 66.66%;
-  padding-left: 40px;
+  padding-left: 70px;
 }
 
 .about-me .about-content .text-about-me h4 {
@@ -888,9 +1044,9 @@ li.angular:after {
 }
 
 .experience {
-  padding: 100px 15px;
+  /* padding: 100px 15px; */
   background-color: var(--background-color);
-  margin: 0;
+  /* margin: 0; */
 }
 
 .experience .section-title {
